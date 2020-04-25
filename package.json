@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "first money project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass-main": "node-sass scss/main.scss css/main.css -w",
+    "build-sass-header": "node-sass scss/header.scss css/header.css -w",
+    "build-sass-hero": "node-sass scss/hero.scss css/hero.css -w"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}

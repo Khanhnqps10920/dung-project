@@ -1,0 +1,51 @@
+@import './variable.scss';
+
+
+.hero-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .slick-track {
+    height: 100vh;
+  }
+
+  .slick-dotted .slick-dots {
+    bottom: 0;
+  }
+
+  .slick-dotted .slick-dots>.slick-active button {
+    background: white;
+  }
+
+  .slick-dotted .slick-dots li button {
+    text-indent: -9999px;
+    overflow: hidden;
+    background: transparent;
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+  }
+
+
+  .slide-show {
+    height: 50.6rem;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    &__item {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+  }
+}

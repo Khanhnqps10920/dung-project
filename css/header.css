@@ -1,0 +1,21 @@
+header {
+  background: #ffffff;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s ease;
+  z-index: 100000000; }
+  header.scrolling {
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.9); }
+  header .navbar-nav li.nav-item {
+    margin: 0 2rem; }
+    header .navbar-nav li.nav-item.active .nav-link {
+      color: #d93f4c; }
+    header .navbar-nav li.nav-item:hover .nav-link {
+      color: #d93f4c; }
+    header .navbar-nav li.nav-item .nav-link {
+      color: #000000;
+      font-size: 1.6rem; }

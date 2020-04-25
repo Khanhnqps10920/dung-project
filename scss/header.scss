@@ -1,0 +1,44 @@
+@import './variable.scss';
+
+header {
+  background: $white-color;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.4s ease;
+  z-index: 100000000;
+
+  &.scrolling {
+    padding: 1rem 0;
+    background: rgba($color: $white-color, $alpha: 0.9);
+  }
+
+  .navbar-nav {
+
+    li.nav-item {
+      margin: 0 2rem;
+
+      &.active {
+
+        .nav-link {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        .nav-link {
+          color: $primary-color;
+        }
+      }
+
+      .nav-link {
+        color: $black-color;
+        font-size: 1.6rem;
+      }
+
+    }
+
+  }
+}
