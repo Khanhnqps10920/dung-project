@@ -1,0 +1,119 @@
+@import './variable.scss';
+
+section {
+    padding: 2rem 0;
+}
+
+.section-title {
+    padding: 1rem 0;
+
+    &__title {
+        font-size: 2.2rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        color: $primary-color;
+        padding: 1rem 0;
+
+        border-bottom: .1rem solid $primary-color;
+    }
+
+    &__btn {
+        padding: 1rem 2rem;
+        border: .1rem solid $primary-color;
+        transition: 0.4s ease;
+        cursor: pointer;
+
+        a {
+            font-size: 1.6rem;
+            color: $black-color;
+            transition: 0.4s ease;
+        }
+
+        &:hover {
+            background-color: $primary-color;
+            border-color: $black-color;
+
+            a {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+
+.featured {
+
+    &__item {
+        height: 49.8rem;
+        width: 100%;
+        border: .1rem solid #f1f1f1;
+        border-radius: .8rem;
+        padding: 7rem 1rem;
+        position: relative;
+        background: #f8f8f8;
+        transition: 0.4s ease;
+        margin-bottom: 2rem;
+
+
+
+        &-new {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            padding: .5rem 1rem;
+            color: $white-color;
+            font-size: 1.6rem;
+            border-radius: .5rem;
+            background: $primary-color;
+        }
+
+        &-images {
+            height: 80%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        &-info {
+            margin: 1rem 0;
+            text-align: center;
+
+            ins {
+                text-decoration: none;
+                font-size: 2rem;
+                color: $primary-color;
+            }
+        }
+
+        &-cart {
+            border: 1px solid $primary-color;
+            background-color: #fff;
+            color: #333333;
+
+            padding: 1rem 2rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 2rem;
+            text-align: center;
+
+            transition: 0.4s ease;
+
+            &:hover {
+                background: $primary-color;
+                color: $white-color;
+            }
+        }
+
+        &:hover {
+            border-color: $primary-color;
+            cursor: pointer;
+        }
+
+
+    }
+
+}

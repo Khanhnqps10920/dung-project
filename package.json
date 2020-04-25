@@ -9,8 +9,6 @@
     "build-sass-header": "node-sass scss/header.scss css/header.css -w",
     "build-sass-hero": "node-sass scss/hero.scss css/hero.css -w",
     "build-sass-home": "node-sass scss/home.scss css/home.css -w"
-
-
   },
   "author": "",
   "license": "ISC",

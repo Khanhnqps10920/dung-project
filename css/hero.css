@@ -19,7 +19,7 @@
     border: 1px solid white; }
   .hero-section .slide-show {
     height: 50.6rem;
-    min-height: 100vh;
+    min-height: 70vh;
     overflow: hidden;
     position: relative; }
     .hero-section .slide-show__item {
