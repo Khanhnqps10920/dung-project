@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/home.css">
+
   <script src="https://kit.fontawesome.com/4e3c8206ba.js" crossorigin="anonymous"></script>
   <title>Dung's Store</title>
 </head>
@@ -31,10 +33,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product</a>
+              <a class="nav-link" href="products-page.html">Product</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Product Sets</a>
+              <a class="nav-link" href="products-page.html">Product Sets</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -235,8 +237,81 @@
       </div>
     </section>
 
+    <section class="support">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-12 col-lg-12 col-md-12">
+            <div class="section-title d-flex justify-content-between align-items-center">
+              <h2 class="section-title__title red-background">
+                Featured Products
+              </h2>
+
+              <div class="section-title__btn red-background">
+                <a href="#">Leave Us Your Information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- form -->
+        <form class="position-absolute support__form" action="">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="support__form-info">
+                <div class="support__form-info-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" placeholder="Example : Alex Johnes etc">
+                </div>
+                <div class="support__form-info-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" name="phoneNumber" placeholder="Example : +84 123 456 etc">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="support__form-info">
+                <div class="support__form-info-group">
+                  <label for="email">Email</label>
+                  <input email type="email" placeholder="Example : alexjohn@gmail.com">
+                </div>
+                <div class="support__form-info-group">
+                  <label for="opinion">Your Opinion</label>
+                  <input type="text" name="opinion" placeholder="Example : Your opinion">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" name="supportBtn" value="Submit">
+        </form>
+
+      </div>
+    </section>
+
   </main>
 
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p class="footer__copyright">
+            &copy; Khanhnguyen
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="footer__social">
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

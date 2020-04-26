@@ -1,0 +1,51 @@
+@import './variable.scss';
+
+.information {
+  h2 {
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-top: 2rem;
+    color: $black-color;
+    opacity: 0.7;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+  }
+}
+
+.products {
+  padding: 2rem 0;
+  margin: 2rem 0;
+
+  &__filter {
+    border: .01rem solid $black-color;
+    padding: 1rem;
+
+    h3 {
+      letter-spacing: 0.3rem;
+      font-size: 1.2rem;
+      padding: 1rem 0;
+      border-bottom: .1rem solid $black-color;
+    }
+
+    &-list {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+
+        a {
+          color: $black-color;
+        }
+      }
+    }
+  }
+
+
+}

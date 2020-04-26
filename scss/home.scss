@@ -15,6 +15,12 @@ section {
         padding: 1rem 0;
 
         border-bottom: .1rem solid $primary-color;
+
+
+        &.red-background {
+            color: $white-color;
+            border-color: $white-color;
+        }
     }
 
     &__btn {
@@ -22,6 +28,14 @@ section {
         border: .1rem solid $primary-color;
         transition: 0.4s ease;
         cursor: pointer;
+
+        &.red-background {
+            border-color: $white-color;
+
+            a {
+                color: $white-color;
+            }
+        }
 
         a {
             font-size: 1.6rem;
@@ -36,6 +50,14 @@ section {
             a {
                 color: $white-color;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-title {
+        &__title {
+            font-size: 1.2rem;
         }
     }
 }
@@ -147,6 +169,14 @@ section {
     }
 }
 
+@media screen and (max-width: 576px) {
+    .custom-col {
+
+        margin-bottom: 1rem;
+
+    }
+}
+
 .images-wrapper {
     width: 100%;
     height: 100%;
@@ -157,4 +187,75 @@ section {
         object-fit: cover;
         object-position: top left;
     }
+}
+
+.support {
+    background: $primary-color;
+    padding: 5rem 0;
+    height: 35rem;
+
+    &__form {
+        margin-top: 1rem;
+        background: $white-color;
+        padding: 2rem;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-flow: column;
+
+        -webkit-box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.75);
+        box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.75);
+
+
+        &-info {
+            padding: 2rem 0;
+
+            &-group {
+                margin: 1rem 0;
+
+                label,
+                input {
+                    display: block
+                }
+
+                label {
+                    font-size: 2rem;
+                    color: $primary-color;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    letter-spacing: 0.3rem;
+                    margin: 1rem 0;
+                }
+
+                input {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    margin: 1rem 0;
+                    border-bottom: .1rem solid #f1f1f1;
+                    padding: 1rem 0;
+                }
+            }
+        }
+
+        input[type="submit"] {
+            border: none;
+            background: $primary-color;
+            color: $white-color;
+            padding: 1rem 2rem;
+            margin: 0 auto;
+            outline: none;
+            transition: 0.4s ease;
+
+            &:hover {
+                border: .1rem solid $black-color;
+                color: $black-color;
+                background: none;
+            }
+        }
+    }
+
+
 }

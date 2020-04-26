@@ -8,7 +8,11 @@
     "build-sass-main": "node-sass scss/main.scss css/main.css -w",
     "build-sass-header": "node-sass scss/header.scss css/header.css -w",
     "build-sass-hero": "node-sass scss/hero.scss css/hero.css -w",
-    "build-sass-home": "node-sass scss/home.scss css/home.css -w"
+    "build-sass-home": "node-sass scss/home.scss css/home.css -w",
+    "build-sass-footer": "node-sass scss/footer.scss css/footer.css -w",
+    "build-sass-product-page": "node-sass scss/product-page.scss css/product-page.css -w"
+
+
   },
   "author": "",
   "license": "ISC",

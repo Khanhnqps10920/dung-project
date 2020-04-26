@@ -1,0 +1,40 @@
+@import './variable.scss';
+
+
+
+.footer {
+  width: 100%;
+  margin-top: 10rem;
+  padding: 1rem 0;
+  background: $primary-color;
+
+
+  &__copyright {
+    margin: 0;
+    color: $white-color;
+    letter-spacing: 0.3rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      color: $white-color;
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+@media screen and (max-width:476px) {
+  .footer {
+    margin-top: 40rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .footer {
+    margin-top: 35rem;
+  }
+}
