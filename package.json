@@ -10,9 +10,8 @@
     "build-sass-hero": "node-sass scss/hero.scss css/hero.css -w",
     "build-sass-home": "node-sass scss/home.scss css/home.css -w",
     "build-sass-footer": "node-sass scss/footer.scss css/footer.css -w",
-    "build-sass-product-page": "node-sass scss/product-page.scss css/product-page.css -w"
-
-
+    "build-sass-product-page": "node-sass scss/product-page.scss css/product-page.css -w",
+    "build-sass-pagination": "node-sass scss/pagination.scss css/pagination.css -w"
   },
   "author": "",
   "license": "ISC",

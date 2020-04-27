@@ -1,0 +1,64 @@
+@import './variable.scss';
+
+.pagination {
+    display: flex;
+    width: 100%;
+    margin: 2rem 0;
+    align-items: center;
+    justify-content: center;
+
+
+    &__current {
+        background: $primary-color;
+        padding: 1rem 1.5rem;
+        font-size: 1.6rem;
+        color: $white-color;
+        position: relative;
+        cursor: pointer;
+
+        &:hover .pagination__items {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+
+
+    &__total {
+        font-size: 1.6rem;
+
+        span {
+            margin: 0 2rem;
+        }
+    }
+
+    &__items {
+        position: absolute;
+        left: 50%;
+        top: 4rem;
+        transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+        box-shadow: 0 15px 25px rgba(63, 78, 100, .15);
+
+        li {
+            display: block;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            a {
+                color: black;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+}
