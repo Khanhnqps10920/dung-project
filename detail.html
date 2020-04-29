@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="library/bs/bootstrap.min.css">
+  <link rel="stylesheet" href="library/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="library/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <script src="https://kit.fontawesome.com/4e3c8206ba.js" crossorigin="anonymous"></script>
+
+
+  <title>Detail</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light  ">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="detail.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products-page.html">Product Sets</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Choose Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">China</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="detail__images">
+                  <div class="images-wrapper">
+                    <img src="images/hat-dieu.jpg" alt="hat_dieu">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="detail__info">
+                  <h1 class="detail__info-name">Crew Nuts</h1>
+                  <p class="detail__info-price">50$</p>
+                  <p class="detail__info-description">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa deleniti consequatur ipsa
+                    recusandae asperiores consectetur sequi repellat id vel atque nemo explicabo, fugiat impedit beatae
+                    officiis, dolores et, facere possimus. Soluta officiis magnam eveniet possimus, ratione quisquam.
+                    Vero, voluptatum?
+                  </p>
+                  <div class="detail__info-quantity">
+                    <button value="-" class="detail__info-quantity-btn minus">-</button>
+                    <span>1</span>
+                    <button value="-" class="detail__info-quantity-btn plus">+</button>
+                    <div class="featured__item-cart" id="addToCart">
+                      <span>Add to cart</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-items">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-12 col-md-12">
+            <div class="section-title d-flex justify-content-between align-items-center">
+              <h2 class="section-title__title">
+                RELATIVE PRODUCTS
+              </h2>
+
+              <div class="section-title__btn">
+                <a href="#">Watch More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="slide-show">
+              <div class="images-wrapper slide-show__item">
+                <img src="images/hero-1.jpg" alt="hero-banner">
+              </div>
+              <div class="images-wrapper slide-show__item">
+                <img src="images/hero-2.jpg" alt="hero-banner">
+              </div>
+              <div class="images-wrapper slide-show__item">
+                <img src="images/hero-3.jpg" alt="hero-banner">
+              </div>
+              <div class="images-wrapper slide-show__item">
+                <img src="images/hero-3.jpg" alt="hero-banner">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p class="footer__copyright">
+            &copy; Khanhnguyen
+          </p>
+        </div>
+        <div class="col-6">
+          <div class="footer__social">
+            <a href="#">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+<script src="library/jquery/jquery.min.js"></script>
+<script src="library/bs/popper.min.js"></script>
+<script src="library/bs/bootstrap.min.js"></script>
+<script src="library/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/addToCart.js"></script>
+
+</html>

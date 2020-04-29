@@ -64,6 +64,9 @@ section {
 
 
 .featured {
+    a {
+        color: $black-color;
+    }
 
     &__item {
         height: 49.8rem;
@@ -103,11 +106,18 @@ section {
         &-info {
             margin: 1rem 0;
             text-align: center;
+            color: $black-color;
 
             ins {
                 text-decoration: none;
                 font-size: 2rem;
                 color: $primary-color;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.2rem;
+                letter-spacing: 0.2rem;
             }
         }
 

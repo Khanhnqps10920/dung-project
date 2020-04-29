@@ -1,0 +1,132 @@
+@import './variable.scss';
+
+.detail {
+  padding: 20rem 0 10rem 0;
+  // background: #f0f0f0;
+
+  &__images {
+    border: .1rem solid $primary-color;
+    padding: .2rem;
+  }
+
+  &__info {
+
+    &-name {
+      font-size: 3.2rem;
+      letter-spacing: 0.3rem;
+    }
+
+    &-price {
+      font-size: 2rem;
+      color: $primary-color;
+    }
+
+    &-description {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      line-height: 2rem;
+    }
+
+    &-quantity {
+      margin: 1rem 0;
+
+      >span {
+        border: .1rem solid #dfdfdf;
+        padding: 1rem 1.5rem;
+      }
+
+
+      &-btn {
+        padding: 1rem 1.5rem;
+        border: none;
+        outline: none;
+        background: $primary-color;
+        color: $white-color;
+      }
+
+
+    }
+
+    .featured__item-cart {
+      margin-left: 2rem;
+      border: 1px solid $primary-color;
+      display: inline-block;
+      background-color: #fff;
+      color: #333333;
+      width: 40%;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+      border-radius: 2rem;
+      text-align: center;
+
+      transition: 0.4s ease;
+
+      &:hover {
+        background: $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+
+.section-title {
+  padding: 1rem 0;
+
+  &__title {
+    font-size: 2.2rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding: 1rem 0;
+
+    border-bottom: .1rem solid $primary-color;
+
+
+    &.red-background {
+      color: $white-color;
+      border-color: $white-color;
+    }
+  }
+
+  &__btn {
+    padding: 1rem 2rem;
+    border: .1rem solid $primary-color;
+    transition: 0.4s ease;
+    cursor: pointer;
+
+    &.red-background {
+      border-color: $white-color;
+
+      a {
+        color: $white-color;
+      }
+    }
+
+    a {
+      font-size: 1.6rem;
+      color: $black-color;
+      transition: 0.4s ease;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      border-color: $black-color;
+
+      a {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+
+.slide-show {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    flex: 0 0 24.5%;
+    height: 20rem;
+  }
+}
