@@ -25,6 +25,6 @@ addBtn.addEventListener('click', (e) => {
 
   }
 
-
-
 })
+
+console.log(window.Redux, window.Storage);

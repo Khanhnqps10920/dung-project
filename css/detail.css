@@ -2,7 +2,7 @@
   padding: 20rem 0 10rem 0; }
   .detail__images {
     border: 0.1rem solid #d93f4c;
-    padding: .2rem; }
+    padding: 0.2rem; }
   .detail__info-name {
     font-size: 3.2rem;
     letter-spacing: 0.3rem; }
@@ -16,7 +16,7 @@
   .detail__info-quantity {
     margin: 1rem 0; }
     .detail__info-quantity > span {
-      border: .1rem solid #dfdfdf;
+      border: 0.1rem solid #dfdfdf;
       padding: 1rem 1.5rem; }
     .detail__info-quantity-btn {
       padding: 1rem 1.5rem;
@@ -35,6 +35,7 @@
     margin-bottom: 1rem;
     border-radius: 2rem;
     text-align: center;
+    cursor: pointer;
     transition: 0.4s ease; }
     .detail__info .featured__item-cart:hover {
       background: #d93f4c;

@@ -83,10 +83,11 @@
                     Vero, voluptatum?
                   </p>
                   <div class="detail__info-quantity">
-                    <button value="-" class="detail__info-quantity-btn minus">-</button>
-                    <span>1</span>
+                    <button value="-" disabled class="detail__info-quantity-btn minus">-</button>
+                    <span id="detailQuantity">1</span>
                     <button value="-" class="detail__info-quantity-btn plus">+</button>
-                    <div class="featured__item-cart" id="addToCart">
+                    <div data-id="5" data-name="crew nut" data-images="hat-dieu.jpg" data-price="50"
+                      class="featured__item-cart" id="addToCart">
                       <span>Add to cart</span>
                     </div>
                   </div>
@@ -161,12 +162,13 @@
   </footer>
 </body>
 
-
+<script src="library/redux/redux.js"></script>
 <script src="library/jquery/jquery.min.js"></script>
 <script src="library/bs/popper.min.js"></script>
 <script src="library/bs/bootstrap.min.js"></script>
 <script src="library/slick-1.8.1/slick/slick.min.js"></script>
 <script src="js/header.js"></script>
-<script src="js/addToCart.js"></script>
+<!-- <script src="js/addToCart.js"></script> -->
+<script src="js/redux/store.js"></script>
 
 </html>
