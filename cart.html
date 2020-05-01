@@ -23,6 +23,27 @@
 
 <body>
 
+    <template id="cartItemTemplate">
+
+        <div class="cart__items-item">
+            <i class="fas fa-times close"></i>
+            <div class="images-wrapper">
+                <img src="images/hat-dieu.jpg" alt="hat_dieu">
+            </div>
+            <div class="cart__info">
+                <h3 class="cart__info-name">Name: <span>Hat dieu</span></h3>
+                <p class="cart__info-price">Price: <span>50$</span></p>
+                <div class="cart__info-quantity">
+                    <button value="-" class="cart__info-quantity-btn minus">-</button>
+                    <span id="quantity">1</span>
+                    <button value="-" class="cart__info-quantity-btn plus">+</button>
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light  ">
@@ -105,14 +126,13 @@
                             <h2 class="cart__title">
                                 6 Items
                             </h2>
-                            <div class="cart__items-item">
+                            <!-- <div class="cart__items-item">
                                 <div class="images-wrapper">
                                     <img src="images/hat-dieu.jpg" alt="hat_dieu">
                                 </div>
                                 <div class="cart__info">
                                     <h3 class="cart__info-name">Name: <span>Hat dieu</span></h3>
                                     <p class="cart__info-price">price: <span>50$</span></p>
-                                    <p class="cart__info-category">Category: <span>750gr</span></p>
                                     <div class="cart__info-quantity">
                                         <button value="-" class="cart__info-quantity-btn minus">-</button>
                                         <span id="quantity">1</span>
@@ -142,7 +162,6 @@
                                 <div class="cart__info">
                                     <h3 class="cart__info-name">Name: <span>Hat dieu</span></h3>
                                     <p class="cart__info-price">price: <span>50$</span></p>
-                                    <p class="cart__info-category">Category: <span>750gr</span></p>
                                     <div class="cart__info-quantity">
                                         <button value="-" class="cart__info-quantity-btn minus">-</button>
                                         <span>1</span>
@@ -157,14 +176,13 @@
                                 <div class="cart__info">
                                     <h3 class="cart__info-name">Name: <span>Hat dieu</span></h3>
                                     <p class="cart__info-price">price: <span>50$</span></p>
-                                    <p class="cart__info-category">Category: <span>750gr</span></p>
                                     <div class="cart__info-quantity">
                                         <button value="-" class="cart__info-quantity-btn minus">-</button>
                                         <span>1</span>
                                         <button value="-" class="cart__info-quantity-btn plus">+</button>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-lg-4 col-md-4">

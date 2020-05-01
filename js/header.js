@@ -14,7 +14,10 @@ window.onscroll = () => {
 
 const cartQuantity = document.querySelector('.cart-total');
 
-const cartItems = JSON.parse(sessionStorage.getItem('cart'));
+
+const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+
+
 cartQuantity.textContent = cartItems.reduce((prev, curr) => {
   return prev + curr.quantity
 }, 0)

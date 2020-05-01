@@ -26,8 +26,9 @@ if (cart) {
 
 
     document.querySelector('.mechandise-price.price').textContent = `$${totalMoney}`;
-    document.querySelector('.cart__title').textContent = totalItems + ' Items ';
     document.querySelector('#orderTotal').textContent = `$${totalMoney}`;
+
+    renderCartItems(cart);
 
 
   } else {
