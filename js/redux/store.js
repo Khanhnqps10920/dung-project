@@ -38,6 +38,9 @@ const rootReducer = (state = initialState, action) => {
 
       return cart;
     }
+    case 'REMOVE_CART': {
+      return [];
+    }
 
     default:
       return state;
@@ -51,8 +54,25 @@ const store = createStore(rootReducer);
 
 store.subscribe(() => {
   console.log('STATE UPDATE !', store.getState());
+  const cart = store.getState();
 
-  sessionStorage.setItem('cart', JSON.stringify(store.getState()));
+  // handle quantity
+  const cartQuantity = document.querySelector('.cart-total');
+  if (cartQuantity) {
+    cartQuantity.textContent = cart.reduce((prev, curr) => {
+      return prev + curr.quantity
+    }, 0)
+  }
+
+  // handle cart total
+
+
+  if (cart.length < 1) {
+    document.querySelector('.empty').style.display = 'block';
+    document.querySelector('.cart').style.display = 'none';
+  }
+
+  sessionStorage.setItem('cart', JSON.stringify(cart));
 })
 
 const handleAddToCart = (item) => {

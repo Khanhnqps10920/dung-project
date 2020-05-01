@@ -1,5 +1,4 @@
 const cart = store.getState();
-console.log(cart);
 
 // check storage
 if (cart) {
@@ -35,4 +34,24 @@ if (cart) {
     document.querySelector('.empty').style.display = 'block';
     document.querySelector('.cart').style.display = 'none';
   }
+}
+
+
+const checkOutBtn = document.querySelector('.check-out-btn');
+
+if (checkOutBtn) {
+  checkOutBtn.addEventListener('click', () => {
+
+    window.location = window.location.href + '#success';
+    window.location.reload(true);
+  })
+}
+
+
+
+
+if (location.hash.substr(1) === 'success') {
+  store.dispatch({
+    type: 'REMOVE_CART',
+  })
 }
