@@ -13,7 +13,9 @@
     "build-sass-product-page": "node-sass scss/product-page.scss css/product-page.css -w",
     "build-sass-pagination": "node-sass scss/pagination.scss css/pagination.css -w",
     "build-sass-cart": "node-sass scss/cart.scss css/cart.css -w",
-    "build-sass-detail": "node-sass scss/detail.scss css/detail.css -w"
+    "build-sass-detail": "node-sass scss/detail.scss css/detail.css -w",
+    "build-sass-modal": "node-sass scss/modal.scss css/modal.css -w"
+
 
   },
   "author": "",

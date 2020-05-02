@@ -24,7 +24,7 @@
       outline: none;
       background: #d93f4c;
       color: #ffffff; }
-  .detail__info .featured__item-cart {
+  .detail__info .add-to-cart {
     margin-left: 2rem;
     border: 1px solid #d93f4c;
     display: inline-block;
@@ -37,7 +37,7 @@
     text-align: center;
     cursor: pointer;
     transition: 0.4s ease; }
-    .detail__info .featured__item-cart:hover {
+    .detail__info .add-to-cart:hover {
       background: #d93f4c;
       color: #ffffff; }
 

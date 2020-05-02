@@ -20,6 +20,8 @@
 
 <body>
 
+
+
   <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light  ">
@@ -97,27 +99,7 @@
 
         <div class="row mt-5">
           <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-            <a href="detail.html">
-              <div class="featured__item">
-                <span class="featured__item-new">
-                  New
-                </span>
-                <div class="featured__item-images">
-                  <img src="images/hat-dieu-removebg-preview.png" alt="featured item">
-                </div>
-                <div class="featured__item-info">
-                  <h5>Cashew</h5>
-                  <p>750G</p>
-                  <ins>50$</ins>
-                </div>
-                <div class="featured__item-cart">
-                  <span>Add to cart</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-            <div class="featured__item">
+            <div class="featured__item" onClick="window.location = 'detail.html'">
               <span class="featured__item-new">
                 New
               </span>
@@ -129,7 +111,8 @@
                 <p>750G</p>
                 <ins>50$</ins>
               </div>
-              <div class="featured__item-cart">
+              <div class="featured__item-cart" data-id="2" data-name="test-item"
+                data-images="hat-dieu-removebg.preview.png" data-price="50">
                 <span>Add to cart</span>
               </div>
             </div>
@@ -147,7 +130,8 @@
                 <p>750G</p>
                 <ins>50$</ins>
               </div>
-              <div class="featured__item-cart">
+              <div class="featured__item-cart" data-id="2" data-name="test-item 4"
+                data-images="hat-dieu-removebg.preview.png" data-price="50">
                 <span>Add to cart</span>
               </div>
             </div>
@@ -165,7 +149,27 @@
                 <p>750G</p>
                 <ins>50$</ins>
               </div>
-              <div class="featured__item-cart">
+              <div class="featured__item-cart" data-id="3" data-name="test-item 3"
+                data-images="hat-dieu-removebg.preview.png" data-price="50">
+                <span>Add to cart</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="featured__item">
+              <span class="featured__item-new">
+                New
+              </span>
+              <div class="featured__item-images">
+                <img src="images/hat-dieu-removebg-preview.png" alt="featured item">
+              </div>
+              <div class="featured__item-info">
+                <h5>Cashew</h5>
+                <p>750G</p>
+                <ins>50$</ins>
+              </div>
+              <div class="featured__item-cart" data-id="4" data-name="test-item 2"
+                data-images="hat-dieu-removebg.preview.png" data-price="50">
                 <span>Add to cart</span>
               </div>
             </div>

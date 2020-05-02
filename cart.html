@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -22,6 +23,55 @@
 </head>
 
 <body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="checkOutModal" tabindex="-1" role="dialog" aria-labelledby="checkOutModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkOutTitle">Please give us your information for delivery</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body support">
+                    <form class="support__form" method="POST" action="">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="support__form-info">
+                                    <div class="support__form-info-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" placeholder="Example : Alex Johnes etc">
+                                    </div>
+                                    <div class="support__form-info-group">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input type="text" name="phoneNumber" placeholder="Example : +84 123 456 etc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <div class="support__form-info">
+                                    <div class="support__form-info-group">
+                                        <label for="email">Email</label>
+                                        <input email type="email" placeholder="Example : alexjohn@gmail.com">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" name="supportBtn" value="Order">
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <template id="cartItemTemplate">
 
@@ -202,7 +252,7 @@
                                 <div class="cart__summary-info-total">
                                     <span>ORDER TOTAL</span><span id="orderTotal">200$</span>
                                 </div>
-                                <button class="check-out-btn">
+                                <button class="check-out-btn" data-toggle="modal" data-target="#checkOutModal">
                                     Check Out
                                 </button>
                             </div>
@@ -252,5 +302,16 @@
 <script src="js/slideshow.js"></script>
 <script src="js/cart.js"></script>
 
+
+<script>
+    if (location.hash.substr(1) === 'success') {
+        window.alert('The order has been noted, you will pay after receive, we will contact you as soon as possible');
+
+
+        store.dispatch({
+            type: 'REMOVE_CART',
+        })
+    }
+</script>
 
 </html>

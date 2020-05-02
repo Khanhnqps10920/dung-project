@@ -38,21 +38,12 @@ if (cart) {
 }
 
 
-const checkOutBtn = document.querySelector('.check-out-btn');
+// const checkOutBtn = document.querySelector('.check-out-btn');
 
-if (checkOutBtn) {
-  checkOutBtn.addEventListener('click', () => {
+// if (checkOutBtn) {
+//   checkOutBtn.addEventListener('click', () => {
 
-    window.location = window.location.href + '#success';
-    window.location.reload(true);
-  })
-}
-
-
-
-
-if (location.hash.substr(1) === 'success') {
-  store.dispatch({
-    type: 'REMOVE_CART',
-  })
-}
+// window.location = window.location.href + '#success';
+// window.location.reload(true);
+//   })
+// }
